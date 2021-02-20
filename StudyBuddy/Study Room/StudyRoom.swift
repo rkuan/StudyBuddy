@@ -9,12 +9,28 @@ import SwiftUI
 
 struct StudyRoom: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Study()
     }
 }
 
 struct StudyRoom_Previews: PreviewProvider {
     static var previews: some View {
         StudyRoom()
+    }
+}
+
+
+struct Study: View {
+    var body: some View {
+       
+        VStack{
+            // vertical stack
+            Text("create a room")
+                .font(.system(size: 30, weight: .bold))
+                .position(x: 207, y: 50)
+            Text("select a study mode:")
+                .foregroundColor(.black)
+            
+        }
     }
 }

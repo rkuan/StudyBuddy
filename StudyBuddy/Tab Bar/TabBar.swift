@@ -42,9 +42,11 @@ struct Tab : View {
                 
                 Profile()
                     .tag(tabItems[0])
+                   
                     .ignoresSafeArea(.all, edges: .top)
+                   
                 
-                Color.blue
+                StudyRoom()
                     .tag(tabItems[1])
                     .ignoresSafeArea(.all, edges: .top)
                 
