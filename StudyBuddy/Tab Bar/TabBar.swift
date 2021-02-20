@@ -46,7 +46,7 @@ struct Tab : View {
                     .ignoresSafeArea(.all, edges: .top)
                    
                 
-                StudyRoom()
+                StudyRoomControl()
                     .tag(tabItems[1])
                     .ignoresSafeArea(.all, edges: .top)
                 
