@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19BC393325E0FA1B002332BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19BC393225E0FA1B002332BA /* GoogleService-Info.plist */; };
 		831834308519CF37A2C25F92 /* Pods_StudyBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BE341B71E10D39322A9E99 /* Pods_StudyBuddy.framework */; };
 		D03E2C8F25E0C74B0090ED7D /* StudyBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E2C8E25E0C74B0090ED7D /* StudyBuddyApp.swift */; };
 		D03E2C9125E0C74B0090ED7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E2C9025E0C74B0090ED7D /* ContentView.swift */; };
@@ -17,6 +16,7 @@
 		D03E2CA725E0C8A50090ED7D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E2CA625E0C8A50090ED7D /* Profile.swift */; };
 		D03E2CAA25E0C8AD0090ED7D /* StudyRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E2CA925E0C8AD0090ED7D /* StudyRoom.swift */; };
 		D03E2CAD25E0C8B60090ED7D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E2CAC25E0C8B60090ED7D /* Store.swift */; };
+		D0C6585925E0D3A500655F42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0C6585825E0D3A400655F42 /* GoogleService-Info.plist */; };
 		D0C6585C25E0D61F00655F42 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6585B25E0D61F00655F42 /* TabBar.swift */; };
 		D0C6586E25E1104C00655F42 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6586D25E1104C00655F42 /* Setting.swift */; };
 		D0C6588125E1301E00655F42 /* ProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6588025E1301E00655F42 /* ProfileControl.swift */; };
@@ -25,7 +25,6 @@
 
 /* Begin PBXFileReference section */
 		03DB6AF52A61ECC618F01FFC /* Pods-StudyBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyBuddy.release.xcconfig"; path = "Target Support Files/Pods-StudyBuddy/Pods-StudyBuddy.release.xcconfig"; sourceTree = "<group>"; };
-		19BC393225E0FA1B002332BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7CADC622F779CC5980C5FAF5 /* Pods-StudyBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyBuddy.debug.xcconfig"; path = "Target Support Files/Pods-StudyBuddy/Pods-StudyBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		D03E2C8B25E0C74B0090ED7D /* StudyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03E2C8E25E0C74B0090ED7D /* StudyBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBuddyApp.swift; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		D03E2CA625E0C8A50090ED7D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		D03E2CA925E0C8AD0090ED7D /* StudyRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoom.swift; sourceTree = "<group>"; };
 		D03E2CAC25E0C8B60090ED7D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		D0C6585825E0D3A400655F42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0C6585B25E0D61F00655F42 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		D0C6586D25E1104C00655F42 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		D0C6588025E1301E00655F42 /* ProfileControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileControl.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		D03E2C8225E0C74B0090ED7D = {
 			isa = PBXGroup;
 			children = (
-				19BC393225E0FA1B002332BA /* GoogleService-Info.plist */,
+				D0C6585825E0D3A400655F42 /* GoogleService-Info.plist */,
 				D03E2C8D25E0C74B0090ED7D /* StudyBuddy */,
 				D03E2C8C25E0C74B0090ED7D /* Products */,
 				E9AB2FE9A0BB2AF75A553BA4 /* Pods */,
@@ -221,7 +221,7 @@
 			files = (
 				D03E2C9625E0C74D0090ED7D /* Preview Assets.xcassets in Resources */,
 				D03E2C9325E0C74D0090ED7D /* Assets.xcassets in Resources */,
-				19BC393325E0FA1B002332BA /* GoogleService-Info.plist in Resources */,
+				D0C6585925E0D3A500655F42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
