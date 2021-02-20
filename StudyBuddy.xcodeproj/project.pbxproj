@@ -18,6 +18,9 @@
 		D03E2CAA25E0C8AD0090ED7D /* StudyRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E2CA925E0C8AD0090ED7D /* StudyRoom.swift */; };
 		D03E2CAD25E0C8B60090ED7D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E2CAC25E0C8B60090ED7D /* Store.swift */; };
 		D0C6585C25E0D61F00655F42 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6585B25E0D61F00655F42 /* TabBar.swift */; };
+		D0C6586E25E1104C00655F42 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6586D25E1104C00655F42 /* Setting.swift */; };
+		D0C6588125E1301E00655F42 /* ProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6588025E1301E00655F42 /* ProfileControl.swift */; };
+		D0C658BA25E199D000655F42 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C658B925E199D000655F42 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		D03E2CA925E0C8AD0090ED7D /* StudyRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoom.swift; sourceTree = "<group>"; };
 		D03E2CAC25E0C8B60090ED7D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		D0C6585B25E0D61F00655F42 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		D0C6586D25E1104C00655F42 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		D0C6588025E1301E00655F42 /* ProfileControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileControl.swift; sourceTree = "<group>"; };
+		D0C658B925E199D000655F42 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		D3BE341B71E10D39322A9E99 /* Pods_StudyBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,7 +119,10 @@
 		D03E2C9F25E0C8730090ED7D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D0C6588025E1301E00655F42 /* ProfileControl.swift */,
 				D03E2CA625E0C8A50090ED7D /* Profile.swift */,
+				D0C6586D25E1104C00655F42 /* Setting.swift */,
+				D0C658B925E199D000655F42 /* AddView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -267,10 +276,13 @@
 			files = (
 				D03E2CAA25E0C8AD0090ED7D /* StudyRoom.swift in Sources */,
 				D03E2CA325E0C89A0090ED7D /* Opening.swift in Sources */,
+				D0C658BA25E199D000655F42 /* AddView.swift in Sources */,
+				D0C6588125E1301E00655F42 /* ProfileControl.swift in Sources */,
 				D03E2CA725E0C8A50090ED7D /* Profile.swift in Sources */,
 				D03E2CAD25E0C8B60090ED7D /* Store.swift in Sources */,
 				D03E2C9125E0C74B0090ED7D /* ContentView.swift in Sources */,
 				D03E2C8F25E0C74B0090ED7D /* StudyBuddyApp.swift in Sources */,
+				D0C6586E25E1104C00655F42 /* Setting.swift in Sources */,
 				D0C6585C25E0D61F00655F42 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,8 +412,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StudyBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = 5AZ53GP7BR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StudyBuddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -411,6 +425,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rkuan.StudyBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -422,8 +437,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StudyBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = 5AZ53GP7BR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StudyBuddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -433,6 +450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rkuan.StudyBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

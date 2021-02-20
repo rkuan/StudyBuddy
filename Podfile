@@ -8,5 +8,6 @@ target 'StudyBuddy' do
   # Pods for StudyBuddy
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Auth'
+	pod 'Firebase/Database'
 
 end

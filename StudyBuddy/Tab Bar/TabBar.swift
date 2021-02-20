@@ -40,7 +40,7 @@ struct Tab : View {
         VStack(spacing: 0){
             TabView(selection: $selected){
                 
-                Profile()
+                ProfileControl()
                     .tag(tabItems[0])
                    
                     .ignoresSafeArea(.all, edges: .top)

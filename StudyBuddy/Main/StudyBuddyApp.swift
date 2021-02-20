@@ -13,7 +13,7 @@ struct StudyBuddyApp: App {
     @UIApplicationDelegateAdaptor(Delegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            Opening()
+            TabBar()
         }
     }
 }
