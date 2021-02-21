@@ -8,24 +8,16 @@
 import Foundation
 import SwiftUI
 
-struct StudyRoomControl: View {
-    var body: some View {
-        StudyRoom()
-    }
-}
-
-struct StudyRoomControl_Previews: PreviewProvider {
-    static var previews: some View {
-        StudyRoomControl()
-    }
-}
-
 struct StudyRoomControls: View {
-    @State private var push = "Create a Room"
+    @State private var push = "StudyRoom"
 
     var body: some View {
        
         ZStack {
+            if (push == "StudyRoom") {
+                Study(push: $push)
+                    .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .leading)))
+            }
             if (push == "Solo") {
                 Solo(push: $push)
                     .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .leading)))

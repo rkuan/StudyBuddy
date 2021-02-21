@@ -7,20 +7,8 @@
 
 import SwiftUI
 
-struct StudyRoom: View {
-    var body: some View {
-        Study()
-    }
-}
-
-struct StudyRoom_Previews: PreviewProvider {
-    static var previews: some View {
-        StudyRoom()
-    }
-}
-
-
 struct Study: View {
+    @Binding var push: String
     var body: some View {
         
         VStack{
@@ -38,55 +26,79 @@ struct Study: View {
                 .position(x: 207, y: 70)
             
             ZStack{
-            RoundedRectangle(cornerRadius: 15, style:.continuous)
-                .frame(width: 350, height: 100)
-                .foregroundColor(Color("lightpink"))
-                .padding(.bottom, 20)
-                .position(x: 207, y: -150)
+            Button(action:{
+                withAnimation(.easeOut(duration: 0.3)) {
+                    self.push = "Solo"
+                                }
+            },
+                label: {
+                RoundedRectangle(cornerRadius: 15, style:.continuous)
+                            .frame(width: 350, height: 100)
+                            .foregroundColor(Color("lightpink"))
+                            .padding(.bottom, 50)
+                }
+            )
                 Text("Solo Study")
                     .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
                     .foregroundColor(Color("darkpink"))
-                    .position(x: 207, y: -155)
+                    .padding(.bottom, 50)
                     .offset(x: 2, y: 2)
                 Text("Solo Study")
                     .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
                     .foregroundColor(.white)
-                    .position(x: 207, y: -155)
-                
+                    .padding(.bottom, 50)
+            }
+            
             ZStack{
-            RoundedRectangle(cornerRadius: 15, style:.continuous)
-                .frame(width: 350, height: 100)
-                .foregroundColor(Color("lightpink"))
-                .padding(.bottom, 20)
-                .position(x: 207, y: 0)
+            Button(action:{
+                withAnimation(.easeOut(duration: 0.3)) {
+                    self.push = "Buddy"
+                                }
+            },
+                label: {
+                RoundedRectangle(cornerRadius: 15, style:.continuous)
+                            .frame(width: 350, height: 100)
+                            .foregroundColor(Color("lightpink"))
+                            .padding(.bottom, 50)
+                }
+            )
                 Text("Study Buddy")
                     .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
                     .foregroundColor(Color("darkpink"))
-                    .position(x: 207, y: -5)
+                    .padding(.bottom, 50)
                     .offset(x: 2, y: 2)
                 Text("Study Buddy")
                     .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
                     .foregroundColor(.white)
-                    .position(x: 207, y: -5)
-                
+                    .padding(.bottom, 50)
+            }
+            
             ZStack{
-            RoundedRectangle(cornerRadius: 15, style:.continuous)
-                .frame(width: 350, height: 100)
-                .foregroundColor(Color("lightpink"))
-                .padding(.bottom, 20)
-                .position(x: 207, y: 150)
+            Button(action:{
+                withAnimation(.easeOut(duration: 0.3)) {
+                    self.push = "Class"
+                                }
+            },
+                label: {
+                RoundedRectangle(cornerRadius: 15, style:.continuous)
+                            .frame(width: 350, height: 100)
+                            .foregroundColor(Color("lightpink"))
+                            .padding(.bottom, 100)
+                }
+            )
                 Text("Class Study")
                     .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
                     .foregroundColor(Color("darkpink"))
-                    .position(x: 207, y: 145)
-                    .offset(x:2, y:2)
+                    .padding(.bottom, 100)
+                    .offset(x: 2, y: 2)
                 Text("Class Study")
                     .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
                     .foregroundColor(.white)
-                    .position(x: 207, y: 145)
-        }
-        }
-}
+                    .padding(.bottom, 100)
+            }
+        
+            
         } .background(Color("background"))
-    }
+        }
 }
+
