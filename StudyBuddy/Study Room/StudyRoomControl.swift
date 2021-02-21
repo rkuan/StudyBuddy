@@ -19,17 +19,17 @@ struct StudyRoomControls: View {
                     .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .leading)))
             }
             if (push == "Solo") {
-                Solo(push: $push)
+                Solo(push: $push, selection:"")
                     .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .leading)))
             }
 
             if (push == "Buddy") {
-                Buddy(push: $push)
+                Buddy(push: $push, selection: "")
                     .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .leading)))
             }
             
             if (push == "Class") {
-                Class(push: $push)
+                Class(push: $push, selection: "")
                     .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .leading)))
             }
         }

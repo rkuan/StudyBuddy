@@ -47,6 +47,10 @@ struct ProfileControls: View {
                 Celebrate(push: $push)
                     .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .trailing)))
             }
+            if (push == "Chat") {
+                Chats(push: $push)
+                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .trailing)))
+            }
         }
         .background(Color("background"))
     }

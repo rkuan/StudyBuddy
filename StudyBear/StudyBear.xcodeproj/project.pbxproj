@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9852CD6A439EBC2255F9C90 /* Pods_StudyBear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C04C9956BDE88D80556B5C /* Pods_StudyBear.framework */; };
+		D091B76325E2280D002431E4 /* StudyBearApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B76225E2280D002431E4 /* StudyBearApp.swift */; };
+		D091B76A25E22810002431E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D091B76925E22810002431E4 /* Preview Assets.xcassets */; };
+		D091B78C25E228FF002431E4 /* Opening.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B78B25E228FF002431E4 /* Opening.swift */; };
+		D091B78F25E22913002431E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B78E25E22913002431E4 /* ContentView.swift */; };
+		D091B79325E22961002431E4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B79225E22961002431E4 /* TabBar.swift */; };
+		D091B79B25E2296E002431E4 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B79525E2296E002431E4 /* AddView.swift */; };
+		D091B79C25E2296E002431E4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B79625E2296E002431E4 /* Profile.swift */; };
+		D091B79D25E2296E002431E4 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B79725E2296E002431E4 /* Test.swift */; };
+		D091B79E25E2296E002431E4 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B79825E2296E002431E4 /* Setting.swift */; };
+		D091B79F25E2296E002431E4 /* Celebrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B79925E2296E002431E4 /* Celebrate.swift */; };
+		D091B7A025E2296E002431E4 /* ProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B79A25E2296E002431E4 /* ProfileControl.swift */; };
+		D091B7AA25E22996002431E4 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B7A525E22996002431E4 /* Class.swift */; };
+		D091B7AB25E22996002431E4 /* Buddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B7A625E22996002431E4 /* Buddy.swift */; };
+		D091B7AC25E22996002431E4 /* StudyRoomControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B7A725E22996002431E4 /* StudyRoomControl.swift */; };
+		D091B7AD25E22996002431E4 /* StudyRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B7A825E22996002431E4 /* StudyRoom.swift */; };
+		D091B7AE25E22996002431E4 /* Solo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B7A925E22996002431E4 /* Solo.swift */; };
+		D091B7B225E22A3F002431E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D091B7B125E22A3F002431E4 /* GoogleService-Info.plist */; };
+		D091B7BC25E24B75002431E4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B7BA25E24B75002431E4 /* Store.swift */; };
+		D091B7BD25E24B75002431E4 /* Closet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B7BB25E24B75002431E4 /* Closet.swift */; };
+		D091B7C125E24B91002431E4 /* StoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B7C025E24B91002431E4 /* StoreController.swift */; };
+		D091B7DB25E25567002431E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D091B7DA25E25567002431E4 /* Assets.xcassets */; };
+		D091B7F525E25F8D002431E4 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B7F425E25F8D002431E4 /* Chat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E2328A24FCB1A10B5D6D861 /* Pods-StudyBear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyBear.debug.xcconfig"; path = "Target Support Files/Pods-StudyBear/Pods-StudyBear.debug.xcconfig"; sourceTree = "<group>"; };
+		D091B75F25E2280D002431E4 /* StudyBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D091B76225E2280D002431E4 /* StudyBearApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBearApp.swift; sourceTree = "<group>"; };
+		D091B76925E22810002431E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D091B76B25E22810002431E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D091B78B25E228FF002431E4 /* Opening.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Opening.swift; sourceTree = "<group>"; };
+		D091B78E25E22913002431E4 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../StudyBuddy/StudyBuddy/Main/ContentView.swift; sourceTree = "<group>"; };
+		D091B79225E22961002431E4 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = "../../../StudyBuddy/StudyBuddy/Tab Bar/TabBar.swift"; sourceTree = "<group>"; };
+		D091B79525E2296E002431E4 /* AddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddView.swift; path = ../../../StudyBuddy/StudyBuddy/Profile/AddView.swift; sourceTree = "<group>"; };
+		D091B79625E2296E002431E4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = ../../../StudyBuddy/StudyBuddy/Profile/Profile.swift; sourceTree = "<group>"; };
+		D091B79725E2296E002431E4 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Test.swift; path = ../../../StudyBuddy/StudyBuddy/Profile/Test.swift; sourceTree = "<group>"; };
+		D091B79825E2296E002431E4 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Setting.swift; path = ../../../StudyBuddy/StudyBuddy/Profile/Setting.swift; sourceTree = "<group>"; };
+		D091B79925E2296E002431E4 /* Celebrate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Celebrate.swift; path = ../../../StudyBuddy/StudyBuddy/Profile/Celebrate.swift; sourceTree = "<group>"; };
+		D091B79A25E2296E002431E4 /* ProfileControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileControl.swift; path = ../../../StudyBuddy/StudyBuddy/Profile/ProfileControl.swift; sourceTree = "<group>"; };
+		D091B7A525E22996002431E4 /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Class.swift; path = "../../../StudyBuddy/StudyBuddy/Study Room/Class.swift"; sourceTree = "<group>"; };
+		D091B7A625E22996002431E4 /* Buddy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Buddy.swift; path = "../../../StudyBuddy/StudyBuddy/Study Room/Buddy.swift"; sourceTree = "<group>"; };
+		D091B7A725E22996002431E4 /* StudyRoomControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudyRoomControl.swift; path = "../../../StudyBuddy/StudyBuddy/Study Room/StudyRoomControl.swift"; sourceTree = "<group>"; };
+		D091B7A825E22996002431E4 /* StudyRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudyRoom.swift; path = "../../../StudyBuddy/StudyBuddy/Study Room/StudyRoom.swift"; sourceTree = "<group>"; };
+		D091B7A925E22996002431E4 /* Solo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Solo.swift; path = "../../../StudyBuddy/StudyBuddy/Study Room/Solo.swift"; sourceTree = "<group>"; };
+		D091B7B125E22A3F002431E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D091B7BA25E24B75002431E4 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Store.swift; path = ../../../../../Downloads/Store/Store.swift; sourceTree = "<group>"; };
+		D091B7BB25E24B75002431E4 /* Closet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Closet.swift; path = ../../../../../Downloads/Store/Closet.swift; sourceTree = "<group>"; };
+		D091B7C025E24B91002431E4 /* StoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreController.swift; sourceTree = "<group>"; };
+		D091B7DA25E25567002431E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/StudyBuddy 2/StudyBuddy/Assets.xcassets"; sourceTree = "<group>"; };
+		D091B7F425E25F8D002431E4 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		DD66C7298DB2B1D44A575D0C /* Pods-StudyBear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyBear.release.xcconfig"; path = "Target Support Files/Pods-StudyBear/Pods-StudyBear.release.xcconfig"; sourceTree = "<group>"; };
+		E2C04C9956BDE88D80556B5C /* Pods_StudyBear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyBear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D091B75C25E2280D002431E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9852CD6A439EBC2255F9C90 /* Pods_StudyBear.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77B16008E0D9A6DFF90C7C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2C04C9956BDE88D80556B5C /* Pods_StudyBear.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D091B75625E2280D002431E4 = {
+			isa = PBXGroup;
+			children = (
+				D091B7B125E22A3F002431E4 /* GoogleService-Info.plist */,
+				D091B76125E2280D002431E4 /* StudyBear */,
+				D091B76025E2280D002431E4 /* Products */,
+				E7048860BB72C9ED90ED8AFE /* Pods */,
+				77B16008E0D9A6DFF90C7C8A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D091B76025E2280D002431E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D091B75F25E2280D002431E4 /* StudyBear.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D091B76125E2280D002431E4 /* StudyBear */ = {
+			isa = PBXGroup;
+			children = (
+				D091B78625E228A8002431E4 /* Main */,
+				D091B78825E228BF002431E4 /* TabBar */,
+				D091B78725E228AF002431E4 /* Profile */,
+				D091B78925E228C7002431E4 /* Study Room */,
+				D091B7DA25E25567002431E4 /* Assets.xcassets */,
+				D091B76B25E22810002431E4 /* Info.plist */,
+				D091B76825E22810002431E4 /* Preview Content */,
+			);
+			path = StudyBear;
+			sourceTree = "<group>";
+		};
+		D091B76825E22810002431E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D091B76925E22810002431E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D091B78625E228A8002431E4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D091B78B25E228FF002431E4 /* Opening.swift */,
+				D091B76225E2280D002431E4 /* StudyBearApp.swift */,
+				D091B78E25E22913002431E4 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D091B78725E228AF002431E4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D091B79A25E2296E002431E4 /* ProfileControl.swift */,
+				D091B79625E2296E002431E4 /* Profile.swift */,
+				D091B79825E2296E002431E4 /* Setting.swift */,
+				D091B79525E2296E002431E4 /* AddView.swift */,
+				D091B79925E2296E002431E4 /* Celebrate.swift */,
+				D091B79725E2296E002431E4 /* Test.swift */,
+				D091B7F425E25F8D002431E4 /* Chat.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D091B78825E228BF002431E4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D091B79225E22961002431E4 /* TabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D091B78925E228C7002431E4 /* Study Room */ = {
+			isa = PBXGroup;
+			children = (
+				D091B7A725E22996002431E4 /* StudyRoomControl.swift */,
+				D091B7A825E22996002431E4 /* StudyRoom.swift */,
+				D091B7A925E22996002431E4 /* Solo.swift */,
+				D091B7A625E22996002431E4 /* Buddy.swift */,
+				D091B7A525E22996002431E4 /* Class.swift */,
+				D091B78A25E228CE002431E4 /* Store */,
+			);
+			path = "Study Room";
+			sourceTree = "<group>";
+		};
+		D091B78A25E228CE002431E4 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				D091B7C025E24B91002431E4 /* StoreController.swift */,
+				D091B7BA25E24B75002431E4 /* Store.swift */,
+				D091B7BB25E24B75002431E4 /* Closet.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		E7048860BB72C9ED90ED8AFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E2328A24FCB1A10B5D6D861 /* Pods-StudyBear.debug.xcconfig */,
+				DD66C7298DB2B1D44A575D0C /* Pods-StudyBear.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D091B75E25E2280D002431E4 /* StudyBear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D091B76E25E22810002431E4 /* Build configuration list for PBXNativeTarget "StudyBear" */;
+			buildPhases = (
+				B16BF053A4979978E58A5FD5 /* [CP] Check Pods Manifest.lock */,
+				D091B75B25E2280D002431E4 /* Sources */,
+				D091B75C25E2280D002431E4 /* Frameworks */,
+				D091B75D25E2280D002431E4 /* Resources */,
+				FF5144DE6EA45A7FC0330ED3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyBear;
+			productName = StudyBear;
+			productReference = D091B75F25E2280D002431E4 /* StudyBear.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D091B75725E2280D002431E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					D091B75E25E2280D002431E4 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = D091B75A25E2280D002431E4 /* Build configuration list for PBXProject "StudyBear" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D091B75625E2280D002431E4;
+			productRefGroup = D091B76025E2280D002431E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D091B75E25E2280D002431E4 /* StudyBear */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D091B75D25E2280D002431E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D091B76A25E22810002431E4 /* Preview Assets.xcassets in Resources */,
+				D091B7DB25E25567002431E4 /* Assets.xcassets in Resources */,
+				D091B7B225E22A3F002431E4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B16BF053A4979978E58A5FD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudyBear-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF5144DE6EA45A7FC0330ED3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudyBear/Pods-StudyBear-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudyBear/Pods-StudyBear-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StudyBear/Pods-StudyBear-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D091B75B25E2280D002431E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D091B78C25E228FF002431E4 /* Opening.swift in Sources */,
+				D091B7AA25E22996002431E4 /* Class.swift in Sources */,
+				D091B7F525E25F8D002431E4 /* Chat.swift in Sources */,
+				D091B7BD25E24B75002431E4 /* Closet.swift in Sources */,
+				D091B7AC25E22996002431E4 /* StudyRoomControl.swift in Sources */,
+				D091B7BC25E24B75002431E4 /* Store.swift in Sources */,
+				D091B79C25E2296E002431E4 /* Profile.swift in Sources */,
+				D091B79F25E2296E002431E4 /* Celebrate.swift in Sources */,
+				D091B78F25E22913002431E4 /* ContentView.swift in Sources */,
+				D091B7AD25E22996002431E4 /* StudyRoom.swift in Sources */,
+				D091B79D25E2296E002431E4 /* Test.swift in Sources */,
+				D091B7A025E2296E002431E4 /* ProfileControl.swift in Sources */,
+				D091B7AE25E22996002431E4 /* Solo.swift in Sources */,
+				D091B79B25E2296E002431E4 /* AddView.swift in Sources */,
+				D091B7C125E24B91002431E4 /* StoreController.swift in Sources */,
+				D091B76325E2280D002431E4 /* StudyBearApp.swift in Sources */,
+				D091B79E25E2296E002431E4 /* Setting.swift in Sources */,
+				D091B7AB25E22996002431E4 /* Buddy.swift in Sources */,
+				D091B79325E22961002431E4 /* TabBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D091B76C25E22810002431E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D091B76D25E22810002431E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D091B76F25E22810002431E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2328A24FCB1A10B5D6D861 /* Pods-StudyBear.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StudyBear/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StudyBear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rkuan.StudyBear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D091B77025E22810002431E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD66C7298DB2B1D44A575D0C /* Pods-StudyBear.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StudyBear/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StudyBear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rkuan.StudyBear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D091B75A25E2280D002431E4 /* Build configuration list for PBXProject "StudyBear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D091B76C25E22810002431E4 /* Debug */,
+				D091B76D25E22810002431E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D091B76E25E22810002431E4 /* Build configuration list for PBXNativeTarget "StudyBear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D091B76F25E22810002431E4 /* Debug */,
+				D091B77025E22810002431E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D091B75725E2280D002431E4 /* Project object */;
+}

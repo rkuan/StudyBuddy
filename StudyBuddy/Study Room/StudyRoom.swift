@@ -24,7 +24,7 @@ struct Study: View {
                 .font(.custom("AvenirNextCondensed-Italic", size: 25))
                 .foregroundColor(.black)
                 .position(x: 207, y: 70)
-            
+            VStack{
             ZStack{
             Button(action:{
                 withAnimation(.easeOut(duration: 0.3)) {
@@ -32,21 +32,25 @@ struct Study: View {
                                 }
             },
                 label: {
+                    ZStack{
                 RoundedRectangle(cornerRadius: 15, style:.continuous)
                             .frame(width: 350, height: 100)
                             .foregroundColor(Color("lightpink"))
                             .padding(.bottom, 50)
+                        Text("Solo Study")
+                            .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
+                            .foregroundColor(Color("darkpink"))
+                            .padding(.bottom, 50)
+                            .offset(x: 2, y: 2)
+                        Text("Solo Study")
+                            .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
+                            .foregroundColor(.white)
+                            .padding(.bottom, 50)
+                    
+                    }
                 }
             )
-                Text("Solo Study")
-                    .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
-                    .foregroundColor(Color("darkpink"))
-                    .padding(.bottom, 50)
-                    .offset(x: 2, y: 2)
-                Text("Solo Study")
-                    .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
-                    .foregroundColor(.white)
-                    .padding(.bottom, 50)
+               
             }
             
             ZStack{
@@ -56,21 +60,24 @@ struct Study: View {
                                 }
             },
                 label: {
-                RoundedRectangle(cornerRadius: 15, style:.continuous)
-                            .frame(width: 350, height: 100)
-                            .foregroundColor(Color("lightpink"))
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 15, style:.continuous)
+                                    .frame(width: 350, height: 100)
+                                    .foregroundColor(Color("lightpink"))
+                                    .padding(.bottom, 50)
+                        Text("Study Buddy")
+                            .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
+                            .foregroundColor(Color("darkpink"))
                             .padding(.bottom, 50)
+                            .offset(x: 2, y: 2)
+                        Text("Study Buddy")
+                            .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
+                            .foregroundColor(.white)
+                            .padding(.bottom, 50)
+                    }
                 }
             )
-                Text("Study Buddy")
-                    .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
-                    .foregroundColor(Color("darkpink"))
-                    .padding(.bottom, 50)
-                    .offset(x: 2, y: 2)
-                Text("Study Buddy")
-                    .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
-                    .foregroundColor(.white)
-                    .padding(.bottom, 50)
+                
             }
             
             ZStack{
@@ -80,23 +87,26 @@ struct Study: View {
                                 }
             },
                 label: {
+                    ZStack{
                 RoundedRectangle(cornerRadius: 15, style:.continuous)
                             .frame(width: 350, height: 100)
                             .foregroundColor(Color("lightpink"))
-                            .padding(.bottom, 100)
+                            .padding(.bottom, 50)
+                        Text("Class Study")
+                            .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
+                            .foregroundColor(Color("darkpink"))
+                            .padding(.bottom, 50)
+                            .offset(x: 2, y: 2)
+                        Text("Class Study")
+                            .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
+                            .foregroundColor(.white)
+                            .padding(.bottom, 50)
+                    }
                 }
             )
-                Text("Class Study")
-                    .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
-                    .foregroundColor(Color("darkpink"))
-                    .padding(.bottom, 100)
-                    .offset(x: 2, y: 2)
-                Text("Class Study")
-                    .font(.custom("AvenirNextCondensed-DemiBoldItalic", size: 28))
-                    .foregroundColor(.white)
-                    .padding(.bottom, 100)
+                
             }
-        
+            }.offset(x: 0, y: -40)
             
         } .background(Color("background"))
         }

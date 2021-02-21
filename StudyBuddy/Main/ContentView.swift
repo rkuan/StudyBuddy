@@ -4,7 +4,6 @@
 //
 //  Created by Raymond Kuan on 2/19/21.
 //
-
 import SwiftUI
 import Firebase
 
@@ -53,12 +52,12 @@ struct LoginView : View {
                         
                         Image("logo")
                             .resizable()
-                            .frame(width: 200, height: 200)
+                            .frame(width: 269.333, height: 178.666)
                     }
                     else{
                         Image("logo")
                             .resizable()
-                            .frame(width: 200, height: 200)
+                            .frame(width: 269.333, height: 178.666)
                     }
                 }
                 VStack(spacing: 4){
@@ -210,12 +209,12 @@ struct SignUpView : View {
                         
                         Image("logo")
                             .resizable()
-                            .frame(width: 200, height: 200)
+                            .frame(width: 269.333, height: 178.666)
                     }
                     else{
                         Image("logo")
                             .resizable()
-                            .frame(width: 200, height: 200)
+                            .frame(width: 269.333, height: 178.666)
                     }
                 }
                     //.padding(.horizontal)
@@ -507,5 +506,4 @@ struct LoadingView : View {
         })
     }
 }
-
 

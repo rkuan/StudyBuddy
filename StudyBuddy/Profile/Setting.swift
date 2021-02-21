@@ -29,9 +29,12 @@ struct Setting: View{
                             }) {
                                 Image(systemName: "chevron.left").font(.title)
                             }
+                        .offset(x: 0, y: 20)
                         
-                        Text("Settings").font(.title)
+                        Text("Settings")
+                            .font(.title)
                     }).foregroundColor(Color.black.opacity(0.5))
+                    .offset(x: 20, y: 20)
                          
                     Spacer()
                            
@@ -47,12 +50,13 @@ struct Setting: View{
             }.frame(height:175)
             
             VStack(spacing: 15){
-                btnView(image: "applogo", name : "Account")
-                btnView(image: "applogo", name : "Account")
-                btnView(image: "applogo", name : "Account")
-                btnView(image: "applogo", name : "Account")
-                btnView(image: "applogo", name : "Account")
-                btnView(image: "applogo", name : "Account")
+                btnView(image: "user", name : "Manage Account")
+                btnView(image: "bell", name : "Notifications")
+                btnView(image: "shield", name : "Security")
+                btnView(image: "tasks 2", name : "Your Activity")
+                btnView(image: "question", name : "Help")
+                btnView(image: "information", name : "About")
+                
             }.padding()
             Spacer()
         }

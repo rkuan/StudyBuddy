@@ -48,7 +48,11 @@ struct Profile : View {
                     
                     Spacer()
                     
-                    Button(action: {}, label: {
+                    Button(action: {
+                        withAnimation(.easeOut(duration: 0.3)) {
+                            self.push = "Chat"
+                                        }
+                    }, label: {
                         
                         Image(systemName: "message.fill")
                             .font(.system(size: 30, weight: .bold))

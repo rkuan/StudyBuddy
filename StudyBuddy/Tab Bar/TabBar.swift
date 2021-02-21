@@ -20,7 +20,7 @@ struct TabBar_Previews: PreviewProvider {
 }
 
 
-var tabItems = ["Home","Search","Favourites"] //changes the name of the tab bar
+var tabItems = ["house.fill","book.fill","cart.fill"] //changes the name of the tab bar
 
 struct Tab : View {
     
@@ -50,7 +50,7 @@ struct Tab : View {
                     .tag(tabItems[1])
                     .ignoresSafeArea(.all, edges: .top)
                 
-                Color.black
+                StoreController()
                     .tag(tabItems[2])
                     .ignoresSafeArea(.all, edges: .top)
                 
@@ -112,7 +112,7 @@ struct TabBarButton : View {
             
             VStack{
                 
-                Image(value)
+                Image(systemName: value)
                     .resizable()
                     .renderingMode(.template)
                     .frame(width: 26, height: 26)
@@ -123,6 +123,7 @@ struct TabBarButton : View {
             .frame(width: 70, height: 50)
         })
     }
+    
 }
 
 
