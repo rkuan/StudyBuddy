@@ -25,12 +25,12 @@ struct StudyRoomControls: View {
 
             if (push == "Buddy") {
                 Buddy(push: $push)
-                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .trailing)))
+                    .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .leading)))
             }
             
             if (push == "Class") {
                 Class(push: $push)
-                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .trailing)))
+                    .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .leading)))
             }
         }
         .background(Color("background"))
