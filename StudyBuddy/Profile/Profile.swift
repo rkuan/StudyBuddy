@@ -13,8 +13,12 @@ import FirebaseDatabase
 
 struct Profile : View {
     @Binding var push: String
+    @Binding var didrun: Bool
     @State var string_taskcompleted: String = ""
     @State var string_name: String = ""
+    @State var personal_list : Set<String> = []
+    
+   
     
     let user = Auth.auth().currentUser
 
@@ -137,6 +141,9 @@ struct Profile : View {
             }
             .padding(.bottom, 10)
             ZStack{
+                
+               
+                
                 RoundedRectangle(cornerRadius: 25, style:.continuous)
                     .fill(Color("darkpink"))
                     .frame(width: 180, height: 290)
@@ -150,6 +157,9 @@ struct Profile : View {
                     .fontWeight(.bold)
                     .foregroundColor(Color("white"))
                     .position(x: 85, y: 30)
+               
+                
+                var x = retrieve_personalgoal()
                 Text("Personal")
                     .font(.custom("Avenir Next", size: 20))
                     .fontWeight(.bold)
@@ -157,6 +167,18 @@ struct Profile : View {
                     .position(x: 270, y: 30)
                 
                 //
+                VStack(spacing: 20){
+                    var temp = array.variable
+                    ForEach(temp, id: \.self) { goal in
+                        academic_checklist(realname:goal)
+                        
+                        
+                    }
+                        
+                }
+                .padding(.leading, -175)
+                .padding(.top, 30)
+               
                 
                 Button(action:{
                     withAnimation(.easeOut(duration: 0.3)) {
@@ -166,35 +188,66 @@ struct Profile : View {
                     label: {
                     
                         Image(systemName: "plus.circle.fill")
+                            .resizable()
+                            .frame(width: 25, height: 25)
                             .font(.system(size: 25, weight: .bold))
                             .foregroundColor(Color("white"))
-                            .position(x: 360, y: 30)
+                            
                     
                 })
-            }
+                .padding(.leading, 305)
+                .padding(.top, -130)
+                
+                Button(action:{
+                    withAnimation(.easeOut(duration: 0.3)) {
+                        self.push = "Party"
+                                    }
+                },
+                    label: {
+                    
+                        Image(systemName: "checkmark.circle.fill")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .font(.system(size: 25, weight: .bold))
+                            .foregroundColor(Color("white"))
+                            
+                    
+                })
+                .padding(.leading, -50)
+                .padding(.top, -130)
+                
+                VStack(spacing: 20){
+                    var temp = convert()
+                    ForEach(temp, id: \.self) { goal in
+                        checklist(name:goal)
+                        
+                        
+                    }
+                        
+                }
+                .padding(.leading, 175)
+                .padding(.top, -80)
+                }
+            
                 .padding(.bottom, 20)
             
             ZStack{
                 RoundedRectangle(cornerRadius: 25, style:.continuous)
                     .fill(Color("darkpink"))
-                    .frame(width: 375, height: 300)
-                Text("Upcoming Assignments")
-                    .font(.custom("Avenir Next", size: 25))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("white"))
-                    .offset(y: -100)
-                    
+                    .frame(width: 375, height: 600)
+                VStack{
+                    upcoming()
+                }
+                .padding(.top, 10)
             
             .padding(.bottom, 35)
         }
            
 }
             .background(Color("background")).ignoresSafeArea()
-        }
-           
         
     }
-    
+    }
     func task_completed() -> String{
         var target:Int = 0
        
@@ -228,5 +281,304 @@ struct Profile : View {
         rootref.child("users/\(userID)/tasks completed").setValue(newnum)
             return 0
     }
+    
+    func retrieve_personalgoal() -> Int{
+        
+        if self.didrun == true{
+        let rootref = Database.database().reference()
+        let userID = Auth.auth().currentUser?.uid
+        var goals = rootref.child("users/\(userID)/personal goals")
+        
+        goals.observe(.childAdded, with: { snapshot in
+            let target = snapshot.childSnapshot(forPath: "Goal").value as? String ?? "No Goal"
+            self.personal_list.insert(target)
+           
+ 
+            })
+            print(self.personal_list)
+        return 0
+        }
+        else{
+            return 0
+    }
+    }
+        func retrieve_personalgoal(temp : Set<String>) -> Array<String>{
+            var temp:Array<String> = []
+            for goal in temp{
+                temp.append(goal)
+            }
+            return temp
+            
+    
+    }
+    func convert() -> Array<String>{
+        var temp:Array<String> = []
+        for goal in self.personal_list{
+            temp.append(goal)
+        }
+        return temp
+        
+
+
+}
 }
 
+
+struct checklist: View{
+    var name = ""
+    @State var toggle = false
+    
+    var body: some View{
+        ZStack{
+            
+        ZStack{
+            
+        
+        RoundedRectangle(cornerRadius: 25, style:.continuous)
+            .fill(Color("lightpink"))
+            .frame(width: 150, height: 40)
+        Text(name)
+            .font(.custom("Avenir Next", size: 15))
+        }
+        
+        Button(action:{
+            withAnimation(.easeOut(duration: 0.3)) {
+                    self.toggle = true
+                                           }
+        },
+            label: {
+            
+                Image(systemName: "circlebadge")
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .font(.system(size: 25, weight: .bold))
+                    .foregroundColor(Color("white"))
+                    
+                    
+            
+        })
+        .offset(x: -50)
+        
+        }
+    }
+    func remove(arr:Array<String>, name:String) -> Array<String>{
+        var temp:[String] = []
+        for element in arr{
+            if element != name{
+                temp.append(element)
+            }
+        }
+        return temp
+        
+    }
+}
+
+struct academic_checklist: View{
+    @State var temp = array.variable
+    @State var realname = ""
+    @State var toggle = false
+    
+    
+    var body: some View{
+        ZStack{
+            
+        ZStack{
+            
+        
+        RoundedRectangle(cornerRadius: 25, style:.continuous)
+            .fill(Color("lightpink"))
+            .frame(width: 150, height: 40)
+        Text(realname)
+            .font(.custom("Avenir Next", size: 15))
+        }
+        
+            Button(action:{remove(name: realname)
+            withAnimation(.easeOut(duration: 0.3)) {
+                var currentcount = get_num()
+                print(array.taskcompleted)
+                array.taskcompleted += 1
+                var x = set_num(newnum: array.taskcompleted)
+                }
+        },
+            label: {
+            
+                if self.toggle == true{
+                    Image(systemName: "circlebadge.fill")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .font(.system(size: 25, weight: .bold))
+                        .foregroundColor(Color("white"))
+                }
+                else{
+                    Image(systemName: "circlebadge")
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .font(.system(size: 25, weight: .bold))
+                    .foregroundColor(Color("white"))
+                    
+                }
+            
+        })
+        .offset(x: -50)
+        
+        }
+    }
+    func remove(name: String){
+        
+        if self.toggle == false{
+            self.toggle = true}
+        else if (self.toggle == true){
+            self.toggle = false
+        }
+                                 
+        print(array.variable)
+        if self.toggle == true{
+            print("True")
+            var count = 0
+            for element in array.variable{
+                print(element)
+                if (element == name){
+                    array.variable.remove(at : count)
+                    print(array.variable)
+                    
+                    
+                }
+                else{
+                    count += 1
+                }
+            }
+            
+        
+        }
+        else if (self.toggle == false){
+            self.toggle = true
+        }
+            }
+    func get_num() -> String{
+        var target:Int = 0
+       
+        let rootref = Database.database().reference()
+        //let userID = Auth.auth().currentUser?.uid
+        rootref.child("users/\(Auth.auth().currentUser?.uid)/tasks completed").observeSingleEvent(of: .value)
+        {(snapshot) in
+            let number = snapshot.value as! Int
+            array.taskcompleted = (number)
+        }
+        return String(target)
+    }
+    
+    func set_num(newnum: Int) -> Int{
+        let rootref = Database.database().reference()
+        let userID = Auth.auth().currentUser?.uid
+        rootref.child("users/\(userID)/tasks completed").setValue(newnum)
+            return 0
+    }
+    
+    
+       
+        
+    }
+    
+
+
+struct array{
+    static var variable:Array = ["History Hw", "Math Quiz", "Rock Test", "Poem"]
+    static var taskcompleted = 12
+    
+
+}
+
+
+struct upcoming: View{
+    @State var temp = ["History Hw", "Math Quiz", "Rock Test", "Poem"]
+    @State var realname = ""
+    @State var toggle = false
+    
+    
+    var body: some View{
+        VStack{
+            Text("Upcoming Assignments")
+                .font(.custom("Avenir Next", size: 25))
+                .fontWeight(.bold)
+                .foregroundColor(Color("white"))
+                .offset(y: -10)
+        ZStack{
+        RoundedRectangle(cornerRadius: 25, style:.continuous)
+            .fill(Color("lightpink"))
+            .frame(width: 360, height: 100)
+        
+        Text("History Hw")
+            .font(.custom("Avenir Next", size: 25))
+            .fontWeight(.bold)
+            .foregroundColor(Color("black"))
+            .offset(x: -90)
+           
+        
+        Text("2/24")
+            .font(.custom("Avenir Next", size: 25))
+            .fontWeight(.bold)
+            .foregroundColor(Color("black"))
+             .offset(x: 135)
+          
+        }
+            ZStack{
+            RoundedRectangle(cornerRadius: 25, style:.continuous)
+                .fill(Color("lightpink"))
+                .frame(width: 360, height: 100)
+            
+            Text("Math Quiz")
+                .font(.custom("Avenir Next", size: 25))
+                .fontWeight(.bold)
+                .foregroundColor(Color("black"))
+                .offset(x: -90)
+               
+            
+            Text("2/26")
+                .font(.custom("Avenir Next", size: 25))
+                .fontWeight(.bold)
+                .foregroundColor(Color("black"))
+                 .offset(x: 135)
+              
+            }
+            ZStack{
+            RoundedRectangle(cornerRadius: 25, style:.continuous)
+                .fill(Color("lightpink"))
+                .frame(width: 360, height: 100)
+            
+            Text("Rock Quiz")
+                .font(.custom("Avenir Next", size: 25))
+                .fontWeight(.bold)
+                .foregroundColor(Color("black"))
+                .offset(x: -90)
+               
+            
+            Text("2/28")
+                .font(.custom("Avenir Next", size: 25))
+                .fontWeight(.bold)
+                .foregroundColor(Color("black"))
+                 .offset(x: 135)
+              
+            }
+            ZStack{
+            RoundedRectangle(cornerRadius: 25, style:.continuous)
+                .fill(Color("lightpink"))
+                .frame(width: 360, height: 100)
+            
+            Text("Poem Quiz")
+                .font(.custom("Avenir Next", size: 25))
+                .fontWeight(.bold)
+                .foregroundColor(Color("black"))
+                .offset(x: -90)
+               
+            
+            Text("2/28")
+                .font(.custom("Avenir Next", size: 25))
+                .fontWeight(.bold)
+                .foregroundColor(Color("black"))
+                 .offset(x: 135)
+              
+            }
+        
+        }
+    }
+}

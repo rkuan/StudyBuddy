@@ -20,6 +20,7 @@ struct Opening: View {
                 ZStack{
                     Color("background")
                         .edgesIgnoringSafeArea(.all)
+                  
                     Image("applogo")
                         .resizable()
                         .frame(width: 200, height: 200)
@@ -46,6 +47,6 @@ struct Opening: View {
 
 struct Opening_Previews: PreviewProvider {
     static var previews: some View {
-        Opening()
+        Test()
     }
 }
